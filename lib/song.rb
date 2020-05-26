@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist
   
@@ -17,5 +19,6 @@ class Song
     song = Song.new(song_name)
     song.artist = Artist.find_or_create_by_name(file_name.split(" - ")[0])
     song
+    
   end
 end
