@@ -9,7 +9,7 @@ class MP3Importer
   
   def files
     files = Dir.children(@path)
-    binding.pry
+    # binding.pry
   end
   
   def import 
