@@ -9,7 +9,7 @@ class Song
   
   def initialize(name)
     @name = name
-    self.all << self
+    @@all << self
   end
   
   def self.new_by_filename
